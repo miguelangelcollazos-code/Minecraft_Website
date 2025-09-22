@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Minecraft</title>
-	<link rel="icon" href="Creeperface.jpg">
+	<link rel="icon" href="images/Creeperface.jpg">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6dd6d382a8.js" crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<header class="header">
@@ -81,7 +82,7 @@
 				<article class="card">
 						<h3>Wither</h3>
 					<div class="card-img">
-						<img src="Wither.webp">
+						<img src="images/Wither.webp">
 					</div>
 					<div class="card-description">
 						<p>The Wither is a floating, three-headed skeletal Boss Mob in Minecraft. It is not only relatively unique due to the fact that you literally have to craft the boss to fight it, but also that there are multiple stages to the encounter that require different strategies.</p>
@@ -93,7 +94,7 @@
 				<article class="card">
 						<h3>Warden</h3>
 					<div class="card-img">
-						<img src="Warden.webp">
+						<img src="images/Warden.webp">
 					</div>
 					<div class="card-description">
 						<p>The warden is a hostile creature that is summoned by sculk screamers . They are completely blind creatures, and therefore use vibrations and their sense of smell to identify and locate players and other creatures. They are extremely powerful, and have the most damage and health of any creature in the game.</p>
@@ -105,7 +106,7 @@
 				<article class="card">
 						<h3>Elder Guardian</h3>
 					<div class="card-img">
-						<img src="Elder_Guardian.webp">
+						<img src="images/Elder_Guardian.webp">
 					</div>
 					<div class="card-description">
 						<p>The Elder Guardian is a hostile creature that only spawns underwater in ocean monuments . It is a stronger variant of the Guardian . Due to its life, being underwater, the thorns and the protection provided by normal guardians; It is considered, within the monument, a chief creature.</p>
@@ -117,7 +118,7 @@
 				<article class="card">
 						<h3>Player</h3>
 					<div class="card-img">
-						<img src="Steve.webp">
+						<img src="images/Steve.webp">
 					</div>
 					<div class="card-description">
 						<p>The player is the controlled character when playing Minecraft . The two default skins are known as Steve (a name given by Notch as a joke [1] but later made official in the "change skin" menu on minecraft.net , in-game as the default name in Bedrock Edition , and his name in Super Smash Bros. Ultimate ) and Alex , with all unchanged skins being either skin. However, the player's appearance can be modified at any time.</p>
@@ -129,7 +130,7 @@
 				<article class="card">
 						<h3>Ender Dragon</h3>
 					<div class="card-img">
-						<img src="Ender_Dragon.webp">
+						<img src="images/Ender_Dragon.webp">
 					</div>
 					<div class="card-description">
 						<p>The Enderdragon is the main boss of the game. She only spawns naturally in her habitat, The End.</p>
@@ -146,13 +147,13 @@
 		<p>Minecraft is a game made up of blocks, creatures and communities. The blocks can be used to redesign the world or build fantastic creations. The creatures may be your friends or you may have to fight them, depending on your play style. Experience epic adventures playing alone or with friends, both options are valid.
 		Unless you're digging deep.</p>
 		<div class="gallery">
-    <img src="galeria-img1.png" class="main-image" id="mainImage">
+    <img src="images/galeria-img1.png" class="main-image" id="mainImage">
     <div class="thumbnails">
-        <img src="galeria-img1.png" class="thumbnail" onclick="changeImage(0)">
-        <img src="galeria-img2.png" class="thumbnail" onclick="changeImage(1)">
-        <img src="galeria-img3.png" class="thumbnail" onclick="changeImage(2)">
-        <img src="galeria-img4.png" class="thumbnail" onclick="changeImage(3)">
-        <img src="galeria-img5.png" class="thumbnail" onclick="changeImage(4)">
+        <img src="images/galeria-img1.png" class="thumbnail" onclick="changeImage(0)">
+        <img src="images/galeria-img2.png" class="thumbnail" onclick="changeImage(1)">
+        <img src="images/galeria-img3.png" class="thumbnail" onclick="changeImage(2)">
+        <img src="images/galeria-img4.png" class="thumbnail" onclick="changeImage(3)">
+        <img src="images/galeria-img5.png" class="thumbnail" onclick="changeImage(4)">
     </div>
     <button onclick="prevImage()">
   <span class="front text"> <<< </span>
@@ -172,43 +173,5 @@
 			<li class="footerlist_li"><a href="https://x.com/Minecraft" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></li>
 		</ul>
 	</footer>
-	<script>
-    var currentImageIndex = 0;
-    var images = [
-        "galeria-img1.png",
-        "galeria-img2.png",
-        "galeria-img3.png",
-        "galeria-img4.png",
-        "galeria-img5.png"
-        // Agrega más imágenes aquí según sea necesario
-    ];
-
-    function showImage(index) {
-        document.getElementById('mainImage').src = images[index];
-        currentImageIndex = index;
-    }
-
-    function changeImage(index) {
-        showImage(index);
-    }
-
-    function prevImage() {
-        if (currentImageIndex > 0) {
-            showImage(currentImageIndex - 1);
-        }
-    }
-
-    function nextImage() {
-        if (currentImageIndex < images.length - 1) {
-            showImage(currentImageIndex + 1);
-        }
-    }
-    showImage(0);
-
-    function toggleMenu() {
-    const navbar = document.querySelector('.main-navbar ul');
-    navbar.classList.toggle('active');
-	}
-</script>
 </body>
 </html>
